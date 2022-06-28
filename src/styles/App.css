@@ -1,0 +1,10 @@
+@import "HeartAnimation.css";
+
+body {
+  background-color: #1e293b;
+  font-family: "Poppins" !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
