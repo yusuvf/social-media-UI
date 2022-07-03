@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { LoopIcon, DotsHorizontalIcon } from "@radix-ui/react-icons";
-import Avatar from "./Avatar";
+import { MemoizedAvatar } from "./Avatar";
 import { Separator } from "./Separator";
 import days from "../config/days";
 
@@ -10,7 +10,7 @@ const PostPreview = ({ postId, avatar, author, username, content, date }) => {
       <div className="flex ml-[24px] mt-[16px] items-center">
         <div className="w-[56px]">
           <Link to={username}>
-            <Avatar width={56} url={avatar} alt={author} />
+            <MemoizedAvatar width={56} url={avatar} alt={author} />
           </Link>
         </div>
 

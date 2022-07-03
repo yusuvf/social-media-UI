@@ -1,6 +1,7 @@
 import { styled } from "@stitches/react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import { violet, blackA } from "@radix-ui/colors";
+import { memo } from "react";
 
 const Avatar = ({ url, width, alt }) => {
   const StyledAvatar = styled(AvatarPrimitive.Root, {
@@ -46,4 +47,4 @@ const Avatar = ({ url, width, alt }) => {
   );
 };
 
-export default Avatar;
+export const MemoizedAvatar = memo(Avatar);
