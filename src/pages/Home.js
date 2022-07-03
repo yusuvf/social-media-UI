@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PostPreview from "../components/PostPreview";
 import profiles from "../data/profiles";
 import { Separator } from "../components/Separator";
-import Avatar from "../components/Avatar";
+import { MemoizedAvatar } from "../components/Avatar";
 import ProfileAvatar from "../img/me.jpg";
 
 const Home = () => {
@@ -57,7 +57,7 @@ const Home = () => {
         <h1 className="ml-6 mt-6 text-xl text-slate-50 font-bold">Main Page</h1>
         <div className="flex flex-col">
           <div className="flex flex-row ml-6 mt-4">
-            <Avatar width={56} url={ProfileAvatar} alt="profile" />
+            <MemoizedAvatar width={56} url={ProfileAvatar} alt="profile" />
             <textarea
               placeholder="Create a post"
               type="text"

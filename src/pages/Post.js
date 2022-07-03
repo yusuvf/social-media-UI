@@ -1,7 +1,7 @@
 import { Separator } from "../components/Separator";
 import { useState, useEffect } from "react";
 import { useLocation, Link, useParams } from "react-router-dom";
-import Avatar from "../components/Avatar";
+import { MemoizedAvatar } from "../components/Avatar";
 import { LoopIcon, DotsHorizontalIcon } from "@radix-ui/react-icons";
 import profiles from "../data/profiles";
 import days from "../config/days";
@@ -39,7 +39,7 @@ const Post = () => {
         <div className="flex ml-[24px] items-center">
           <div className="w-[56px]">
             <Link to={"/" + selectedProfile.username}>
-              <Avatar
+              <MemoizedAvatar
                 width={56}
                 url={selectedProfile.avatar}
                 alt={selectedProfile.name}

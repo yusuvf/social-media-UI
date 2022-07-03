@@ -1,4 +1,4 @@
-import Avatar from "../components/Avatar";
+import { MemoizedAvatar } from "../components/Avatar";
 import BannerImage from "../img/banner.jpeg";
 import EditButton from "../components/EditButton";
 import { useParams } from "react-router-dom";
@@ -26,7 +26,7 @@ const Profile = () => {
           alt="profile"
         />
         <div className="z-2 absolute top-[80px] sm:top-[160px] left-4 md:left-8 border-slate-800 border-[5px] rounded-full">
-          <Avatar width={120} alt="bannerImage" url={profile.avatar} />
+          <MemoizedAvatar width={120} alt="bannerImage" url={profile.avatar} />
         </div>
         <div className="w-full h-[220px] sm:h-[240px] border-b-[1px] border-slate-600">
           <div className="ml-[150px] md:ml-[170px] pt-4 flex flex-row items-center">
